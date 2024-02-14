@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} font-mono`}>
+        <h1 className="text-xl pb-3">Root Layout</h1>
+
+        {children}
+      </body>
     </html>
   );
 }
