@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import RootNav from "./components/roout-nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} font-mono`}>
         <h1 className="text-xl pb-3">Root Layout</h1>
-
+        <RootNav />
         {children}
       </body>
     </html>

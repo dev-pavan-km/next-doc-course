@@ -1,3 +1,5 @@
+import RoutingNav from "../components/routing-nav";
+
 export default function RoutingRootLayout({
   children,
 }: Readonly<{
@@ -30,6 +32,7 @@ export default function RoutingRootLayout({
           accept a children prop that will be populated with a child layout (if it exists) or a page during rendering.
         </li>
       </ul>
+      <RoutingNav />
       {children}
     </section>
   );
