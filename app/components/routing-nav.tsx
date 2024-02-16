@@ -22,6 +22,16 @@ const RoutingNav = () => {
             Linking & Navigating
           </Link>
         </li>
+        <li>
+          <Link className={`${pathname === "/routing/error" ? "font-bold" : ""}`} href="/routing/error">
+            Error
+          </Link>
+        </li>
+        <li>
+          <Link className={`${pathname === "/routing/redirecting" ? "font-bold" : ""}`} href="/routing/redirecting">
+            Redirecting
+          </Link>
+        </li>
       </ul>
     </nav>
   );

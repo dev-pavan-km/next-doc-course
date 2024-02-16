@@ -1,4 +1,4 @@
-import RoutingNav from "../components/routing-nav";
+import RoutingNav from "../../components/routing-nav";
 
 export default function RoutingRootLayout({
   children,
@@ -7,7 +7,7 @@ export default function RoutingRootLayout({
 }>) {
   return (
     <section className="mx-10">
-      <h1 className="text-xl my-3">Nested Routing Root Layout</h1>
+      <h1 className="text-xl my-3">Nested Routing Root Layout11</h1>
       <ul className="list-disc ml-5">
         <li>layout is the first wrapper in the component hierarchy</li>
         <li>
