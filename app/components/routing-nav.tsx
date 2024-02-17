@@ -32,6 +32,11 @@ const RoutingNav = () => {
             Redirecting
           </Link>
         </li>
+        <li>
+          <Link className={`${pathname === "/routing/dynamic-routes" ? "font-bold" : ""}`} href="/routing/dynamic-routes">
+            Dynamic Routes
+          </Link>
+        </li>
       </ul>
     </nav>
   );
