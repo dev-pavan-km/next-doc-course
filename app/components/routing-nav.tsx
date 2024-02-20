@@ -37,6 +37,11 @@ const RoutingNav = () => {
             Dynamic Routes
           </Link>
         </li>
+        <li>
+          <Link className={`${pathname === "/routing/parllel-routes" ? "font-bold" : ""}`} href="/routing/parllel-routes">
+            Parllel Routes
+          </Link>
+        </li>
       </ul>
     </nav>
   );
