@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import RootNav from "./components/root-nav";
+import { WebVitals } from "./_components/web-vitals";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} font-mono`}>
+        <WebVitals />
         <h1 className="text-xl pb-3">Root Layout</h1>
         <RootNav />
         {children}
